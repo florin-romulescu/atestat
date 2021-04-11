@@ -1,0 +1,27 @@
+.Button:hover{
+    background-color: #ed684e;
+    color: white;
+}
+/*#54bbff*/
+form#tabform > input:hover, input#submit:hover{
+    background-color: #ed684e;
+    color: white;
+}
+
+table:hover, .Options:hover, .Box:hover, .List:hover{
+    scale: 1.02;
+    border: 2px solid #ed684e;
+    box-shadow: none;
+}
+
+.Slider>ul>li:hover{
+    scale: 1.2;
+}
+li>a:hover{
+    color:#ed684e;
+}
+
+.DeleteBtn:hover{
+    background-color: red;
+    color: red;
+}
