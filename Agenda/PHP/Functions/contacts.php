@@ -123,4 +123,22 @@
 
     }
 
+    function get_aspect($conexiune){
+        $rez =  mysqli_query(
+            $conexiune,
+            "select * from Aspect"
+        );
+        while($linie = @mysqli_fetch_assoc($rez)){
+            if($linie['folosit']==1)
+                return $linie['nume'];
+        }
+        return 'Default';
+    }
+
+
+    function change_aspect($conexiune){
+        $aspect = get_aspect($conexiune);
+        if($aspect == 'Intunecat')
+            echo '<link rel="stylesheet" href="CSS/dark.css">';
+    }
 ?>

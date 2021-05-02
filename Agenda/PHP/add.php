@@ -39,21 +39,21 @@
 </head>
 <body class="Background">
     <head>
-        <h1 class="Centered">Adauga Contact</h1>
+        <h1 class="Centered">Adaugă Contact</h1>
     </head>
 
     <main>
-        <div class="Box">
+        <div class="Box translucid">
             <p>
-                Daca acest contact exista numarul de telefon si adresa de email 
-                vor fi adaugate contactului respectiv!
+                Dacă acest contact există numărul de telefon și adresa de email 
+                vor fi adăugate contactului respectiv!
             </p>
 
             <form action="add.php" method="post" id="modform">
                 <input type="text" name="contact" id="contact" placeholder="Nume">
                 <input type="tel" name="telefon" id="telefon" pattern="07[0-9]{8}" placeholder="Telefon">
                 <input type="email" name="email" id="email" placeholder="Email">
-                <input type="submit" value="Adauga contact" name="addContactBtn" id="submit">
+                <input type="submit" value="Adaugă contact" name="addContactBtn" id="submit">
             </form>
         </div>
     </main>

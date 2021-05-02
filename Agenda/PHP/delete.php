@@ -28,19 +28,19 @@
 </head>
 <body class="Background">
     <head>
-        <h1>Sterge contact</h1>
+        <h1>Șterge contact</h1>
     </head>
 
     <main>
         <div class="Box">
             <p>
-                Introdu numele contactului pe care vrei sa il introduci! <br>
-                Vor fi sterse toate numerele de telefon si adresele de email asociate
+                Introdu numele contactului pe care vrei sa îl introduci! <br>
+                Vor fi șterse toate numerele de telefon și adresele de email asociate
                 contactului respectiv!
             </p>
             <form action="delete.php" method="post" id="modform">
                 <input type="text" name="contact" id="contact"  placeholder="Nume">
-                <input type="submit" value="Sterge Contact" name="deleteContactBtn" id="submit">
+                <input type="submit" value="Șterge Contact" name="deleteContactBtn" id="submit">
             </form>
             <p class="Warning">
             <?php

@@ -12,6 +12,9 @@
         include "Functions/contacts.php";
         $conexiune = get_conexion();
         $contact = get_contact($_POST["nume"],$conexiune);
+        $aspect = get_aspect($conexiune);
+        if($aspect == 'Intunecat')
+            echo '<link rel="stylesheet" href="../CSS/dark.css">';
 
         if(isset($_POST['value'])){
             $value = $_POST['value'];
@@ -27,6 +30,26 @@
         }
         
     ?>
+    <style>
+        main{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+        }
+        main>form{
+            margin-top: 5%;
+            text-align:center;
+            width:100%;
+        }
+        main>form>input#submit{
+            <?php
+                if($aspect != 'Intunecat'){
+                ?>
+            background-color: rgb(255,255,255);
+            <?php } ?>
+            width: 20%;
+        }
+    </style>
 </head>
 <body class="Background-Alpha">
     <head>
@@ -36,7 +59,7 @@
     </head>
 
     <main>
-    <div class="List">
+    <div class="List translucid">
         Numere de telefon:
         <hr>
             <ul>
@@ -92,6 +115,11 @@
             ?>
             </ul>
             </div>
+
+        <form action="delete.php" method="post">
+                <input type="hidden" name="contact" value="<?php echo $_POST['nume'];?>">
+                <input type="submit" value="Sterge contactul" class="Button Shadow Btn" id="submit" name="deleteContactBtn">
+        </form>
     </main>
 </body>
 </html>
