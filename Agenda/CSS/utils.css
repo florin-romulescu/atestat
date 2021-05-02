@@ -22,10 +22,17 @@
     box-shadow: 0px 0px 10px rgb(125,125,125);
 }
 
+
+.translucid{
+    background-color: rgba(255,255,255,0.95);
+}
+
 .Btn{
+    padding-top: 10px; padding-bottom: 10px;
+    height: 60%;
     border: 0px;
     border-radius: 0.5rem;
-    background-color: rgba(235,235,235);
+    background-color: rgba(220,220,220);
     padding: 5px;
     width: 10rem;
 }
@@ -57,21 +64,25 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.85);
     padding: 10px;
     border: 0px;
     border-radius: 0.5rem;
     right: 5rem;
-    top: 8.6rem;
-    height: 13rem;
+    top: 33%;
+    height: 17rem;
     width: 20%;
     transition: all 300ms;
 }
 
+.Options>form{
+    height: 40%;
+}
+
 .Slider{
     padding: 0;
-    left: 1%;
-    top: 7%;
+    left: 0.5%;
+    top: 0%;
 }
 
 .Slider>ul{
@@ -85,6 +96,7 @@
 .Slider>ul>li{
     margin-top: 2px;
     transition: all 300ms;
+    text-align: center;
 }
 
 .Background{
@@ -96,11 +108,11 @@
 }
 
 .Background-Alpha{
-    background-image: url("../img/contact.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50rem 8rem;
-    background-color: #b8cdd4;
+	background: url("../img/agenda_bkg.jpg") repeat fixed 100%;
+}
+
+.Background-Alpha-2{
+	background: url("../img/profile_bkg.jpg") repeat fixed 100%;
 }
 
 .DeleteBtn{
@@ -127,10 +139,10 @@ main{
 
 table{
     position: relative;
-    right: 10%;
+    right: 13%;
 
     transition: all 300ms;
-    width: 60%;
+    width: 65%;
     background-color: rgb(255,255,255);
     padding: 10px;
     border-radius: 0.5rem;
@@ -147,7 +159,7 @@ form#tabform{
 form#tabform > input{
     border: 0px;
     border-radius: 0.5rem;
-    background-color: rgba(235,235,235);
+    background-color: rgba(220,220,220,0.95);
     height: 100%;
     transition: all 300ms;
 }
@@ -168,7 +180,7 @@ form#modform>input{
 
 input#submit{
     margin-top: 10px;
-    background-color: rgb(235,235,235);
+    background-color: rgb(220,220,220);
     border: 0px;
     height: 50px;
     border-radius: 0.5rem;
@@ -177,11 +189,21 @@ input#submit{
 
 input#searchimg{
     position: absolute;
-    top: 43%;
+    top: 30%;
     right: 15%;
     
 }
 
 ul{
     list-style-type: none;
+}
+
+ul#slider>li>a{
+    border-radius: 40%;
+}
+
+td#nocontacts{
+    padding: 2rem;
+    font-weight: bold;
+    text-decoration: underline 2px;
 }

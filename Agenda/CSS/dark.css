@@ -1,0 +1,56 @@
+*{
+    color: #fff;
+}
+
+.Dark{
+    background-color: rgba(0,0,0,0.95);
+}
+
+.Shadow{
+    box-shadow: 0 0 8px rgb(25,25,25);
+}
+
+form#tabform>input{
+    background-color: #1c1c1c;
+}
+
+.Background-Alpha{
+    background: url("../img/agenda_dark_bkg.jpg") fixed 100%;
+    background-size: contain;
+}
+
+.Btn{
+    background-color: #1c1c1c;
+}
+
+.Options{
+    background-color: rgba(0,0,0,0.95);
+}
+
+.Box{
+    background-color: #161616;
+}
+
+.Slider>ul{
+    background-color: rgba(0,0,0,0.95);
+}
+
+a{
+    color: #fff;
+}
+
+.List{
+    background-color: rgba(0,0,0,0.95);
+    box-shadow: 0 0 8 rgb(25,25,25);
+}
+
+form>input#submit{
+    background-color: rgba(0,0,0,0.95);
+}
+
+input[type=text]{
+    background-color: #1c1c1c;
+    border: 0;
+    padding: 11px;
+    border-radius: 0.2rem;
+}

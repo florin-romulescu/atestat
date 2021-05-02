@@ -16,6 +16,8 @@ table:hover, .Options:hover, .Box:hover, .List:hover{
 
 .Slider>ul>li:hover{
     scale: 1.2;
+    background-color: rgb(215,215,215);
+    border-radius: 40%;
 }
 li>a:hover{
     color:#ed684e;
